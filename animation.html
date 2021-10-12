@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Animation css</title>
+        <style>
+          #box{
+           height:90px;
+           width: 600px;
+           align-items: center;
+           margin-top: 30px;
+           animation-name: sample;
+           animation-duration: 3s;
+           animation-iteration-count: 2;
+           animation-delay: 0s;
+           animation-direction: alternate;
+          }
+
+          .first{
+            background-image:a.jpg;
+            animation-timing-function: ease;
+          }
+
+          .second{
+            background-color: rgb(96, 109, 60);
+            animation-timing-function: linear;
+          }
+
+        
+          .third{
+            background-color: rgb(224, 53, 147);
+            animation-timing-function: ease-in;
+          }
+
+          .four{
+            background-color: rgb(48, 158, 231);
+            animation-timing-function: ease-out;
+          }
+
+          .five{
+            background-color: rgb(241, 198, 54);
+            animation-timing-function: ease;
+          }
+
+          .six{
+            background-color: rgba(94, 214, 57, 0.123);
+            animation-timing-function: linear;
+          }
+
+          @keyframes sample{
+              0%{border-radius: 0%;}
+              12%{background-color: red;}
+              40%{background-color: aqua;}
+              100%{border-radius: 100%;text-decoration: aqua;}
+          }
+
+        </style>
+    </head>
+    <body>
+        
+                  <div class="first" id="box"></div>
+                  <div class="second" id="box"></div>
+                  <div class="third" id="box"></div>
+                  <div class="four" id="box"></div>
+                   <div class="five" id="box"></div>
+                  <div class="six" id="box"></div>
+    </body>
+</html>
